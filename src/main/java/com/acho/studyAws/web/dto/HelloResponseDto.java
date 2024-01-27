@@ -1,4 +1,4 @@
-package com.acho.studyAws.dto;
+package com.acho.studyAws.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

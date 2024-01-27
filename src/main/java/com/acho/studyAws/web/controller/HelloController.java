@@ -1,6 +1,6 @@
-package com.acho.studyAws.controller;
+package com.acho.studyAws.web.controller;
 
-import com.acho.studyAws.dto.HelloResponseDto;
+import com.acho.studyAws.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
