@@ -1,5 +1,6 @@
 package com.acho.studyAws.dto;
 
+import com.acho.studyAws.web.dto.HelloResponseDto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.*;
 
