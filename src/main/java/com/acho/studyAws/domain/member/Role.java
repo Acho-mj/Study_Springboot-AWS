@@ -1,4 +1,4 @@
-package com.acho.studyAws.domain.user;
+package com.acho.studyAws.domain.member;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

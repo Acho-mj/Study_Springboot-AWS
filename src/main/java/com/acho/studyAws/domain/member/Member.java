@@ -1,4 +1,4 @@
-package com.acho.studyAws.domain.user;
+package com.acho.studyAws.domain.member;
 
 import com.acho.studyAws.domain.BaseTimeEntity;
 import jakarta.persistence.*;
@@ -6,12 +6,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.management.relation.Role;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class User extends BaseTimeEntity {
+public class Member extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,21 +30,21 @@ public class User extends BaseTimeEntity {
     private Role role;
 
     @Builder
-    public User(String name, String email, String picture, Role role){
+    public Member(String name, String email, String picture, Role role){
         this.name = name;
         this.email = email;
         this.picture = picture;
         this.role = role;
     }
 
-    public User update(String name, String picture){
+    public Member update(String name, String picture) {
         this.name = name;
         this.picture = picture;
 
         return this;
     }
 
-    public String getRoleKey(){
+    public String getRoleKey() {
         return this.role.getKey();
     }
 }
