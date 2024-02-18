@@ -1,10 +1,11 @@
 package com.acho.studyAws.domain.member;
 
 import com.acho.studyAws.domain.BaseTimeEntity;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
 
 
 @Getter

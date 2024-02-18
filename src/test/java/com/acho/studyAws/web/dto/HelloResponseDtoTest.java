@@ -1,4 +1,4 @@
-package com.acho.studyAws.dto;
+package com.acho.studyAws.web.dto;
 
 import com.acho.studyAws.web.dto.HelloResponseDto;
 import org.junit.Test;
