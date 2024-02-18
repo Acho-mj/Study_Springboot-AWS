@@ -1,4 +1,4 @@
-package com.acho.studyAws.controller;
+package com.acho.studyAws.web.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

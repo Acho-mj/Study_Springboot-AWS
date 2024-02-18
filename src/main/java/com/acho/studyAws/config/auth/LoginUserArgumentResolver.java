@@ -1,7 +1,7 @@
 package com.acho.studyAws.config.auth;
 
 import com.acho.studyAws.config.auth.dto.SessionUser;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Component;

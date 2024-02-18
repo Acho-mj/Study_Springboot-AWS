@@ -4,7 +4,7 @@ import com.acho.studyAws.config.auth.LoginUser;
 import com.acho.studyAws.config.auth.dto.SessionUser;
 import com.acho.studyAws.service.posts.PostsService;
 import com.acho.studyAws.web.dto.PostsResponseDto;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
