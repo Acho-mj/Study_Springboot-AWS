@@ -2,7 +2,7 @@ package com.acho.studyAws.service.posts;
 
 import com.acho.studyAws.domain.posts.Posts;
 import com.acho.studyAws.domain.posts.PostsRepository;
-import com.acho.studyAws.web.dto.PostListResponseDto;
+import com.acho.studyAws.web.dto.PostsListResponseDto;
 import com.acho.studyAws.web.dto.PostsResponseDto;
 import com.acho.studyAws.web.dto.PostsSaveRequestDto;
 import com.acho.studyAws.web.dto.PostsUpdateRequestDto;
@@ -33,6 +33,14 @@ public class PostsService {
         return id;
     }
 
+    @Transactional
+    public void delete (Long id) {
+        Posts posts = postsRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("해당 사용자가 없습니다. id=" + id));
+
+        postsRepository.delete(posts);
+    }
+
     public PostsResponseDto findById(Long id){
         Posts post = postsRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("게시글이 없습니다. id =" + id));
@@ -41,9 +49,9 @@ public class PostsService {
     }
 
     @Transactional(readOnly = true)
-    public List<PostListResponseDto> findAllDesc() {
+    public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
-                .map(PostListResponseDto::new)
+                .map(PostsListResponseDto::new)
                 .collect(Collectors.toList());
     }
 
