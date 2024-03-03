@@ -56,6 +56,8 @@ deploy:
     deplyment_group: study_springboot-aws-group
     region: ap-northeast-2
     wait-until-deployed: true
+    on:
+      branch: main
 
 # CI 실행 완료 시 작성한 이메일로 알람
 notifications:
