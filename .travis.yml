@@ -51,7 +51,7 @@ deploy:
     key: Study_Springboot-AWS.zip
 
     bundle_type: zip
-    application: Study_Springboot-AWS
+    application: study_springboot-aws
 
     deplyment_group: study_springboot-aws-group
     region: ap-northeast-2
