@@ -36,10 +36,9 @@ deploy:
 
     bucket: study-springboot-aws-build
     region: ap-northeast-2
-    skip_cleanup: true
+    cleanup: false
     acl: private
     local_dir: deploy
-    wait_until_deployed : true
 
 # CI 실행 완료 시 작성한 이메일로 알람
 notifications:
